@@ -3,9 +3,8 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Redirect root to login page since welcome.blade.php is deleted
+Route::redirect('/', '/login');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
