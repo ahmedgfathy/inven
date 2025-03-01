@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Redirect the root route to the login page
+Route::redirect('/', '/login');
+
+// Add other routes as needed...
